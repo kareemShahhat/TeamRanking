@@ -171,7 +171,7 @@ span.rnk {
     box-shadow: inset 1px 1px 4px 0px #1f405e;
 }
 span.task{
-    display: none;
+    /* display: none; */
 }
 /* small screen */
 @media(min-width:640px){
@@ -240,5 +240,25 @@ span.task{
         border-radius: 9px;
         background-color: #ffdfa2;
         display: block;
+    }
+}
+@media(max-width:767px){
+    span.task {
+        color: black;
+        border-left: 2px solid;
+        /* display: none; */
+        margin-left: 10px;
+        padding-left: 9px;
+    }
+    .boxt1 button, .boxt2 button {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    span.rnk {
+        margin-right: 8px;
+    }
+    .item span {
+        margin-left: 9px;
+        font-size: 1.3rem;
     }
 }
